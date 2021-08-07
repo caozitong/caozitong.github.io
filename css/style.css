@@ -7,6 +7,11 @@ body {
   background-image: url(../img/us.jpg);
   height: 100%;
   overflow-y:scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-position: center 0
 }
 
 
