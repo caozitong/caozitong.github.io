@@ -107,7 +107,7 @@ function calculateAndRender() {
   }
 
   // Abort if input is bad
-  if (!birthday || !expectancyNow) {
+  if (!birthday || !expectancyNow || !dream) {
     renderNoOutput();
     return;
   }
@@ -144,4 +144,4 @@ calculateAndRender(); // Initial render for when data was stored
 $("#birthdayInput").on("input", calculateAndRender);
 $("#lifeExpectancyInput").on("input", calculateAndRender);
 $("#DreamInput").on("input", calculateAndRender);
-//setInterval(calculateAndRender, dayinms); // Every 0.00001 day in ms
+setInterval(calculateAndRender, dayinms); // Every 0.00001 day in ms
